@@ -137,3 +137,37 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply my-8 text-center;
   }
 </style>
+<script>
+  function addScrambleEffect() {
+    const scrambleLinks = document.querySelectorAll(".scramble");
+    [...scrambleLinks].forEach(link => {
+      link.addEventListener("mouseover", e => {
+        const target = e.target as HTMLElement;
+        const { innerText: oldText } = target;
+        const shuffledText = oldText.split("").sort(() => Math.random() - 0.5);
+        target.innerText = shuffledText.join("");
+
+        // run slower on smaller strings
+        const effectMilliseconds = oldText.length > 10 ? 7 : 30;
+
+        oldText.split("").forEach((letter, i) => {
+          const interval = setTimeout(
+            () => {
+              const newText = shuffledText;
+              newText[i] = letter;
+              target.innerText = newText.join("");
+            },
+            effectMilliseconds * (i + 1)
+          );
+          target.addEventListener("mouseleave", () => {
+            clearInterval(interval);
+            target.innerText = oldText;
+          });
+        });
+      });
+    });
+  }
+  addScrambleEffect();
+
+  document.addEventListener("astro:after-swap", addScrambleEffect);
+</script>
