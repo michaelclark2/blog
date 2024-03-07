@@ -1,9 +1,9 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://blog.mclark.dev",
   author: "Michael Clark",
-  desc: "A full stack developer with a passion for building performant systems.",
+  desc: "A full stack web developer who likes to build things and ship fast.",
   title: "Michael Makes Things",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
@@ -27,27 +27,27 @@ export const SOCIALS: SocialObjects = [
   {
     name: "Portfolio",
     href: "https://www.mclark.dev",
-    linkTitle: ` ${SITE.title}'s Portfolio`,
+    linkTitle: ` ${SITE.author}'s Portfolio`,
     active: true,
   },
 
   {
     name: "Github",
     href: "https://github.com/michaelclark2",
-    linkTitle: ` ${SITE.title} on Github`,
+    linkTitle: ` ${SITE.author} on Github`,
     active: true,
   },
   {
     name: "LinkedIn",
     href: "https://linkedin.com/in/michaelwclark2",
-    linkTitle: `${SITE.title} on LinkedIn`,
+    linkTitle: `${SITE.author} on LinkedIn`,
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
-    linkTitle: `Send an email to ${SITE.title}`,
-    active: false,
+    href: "mc2.dev@proton.me",
+    linkTitle: `Send an email to ${SITE.author}`,
+    active: true,
   },
   {
     name: "Twitter",
