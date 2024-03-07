@@ -1,0 +1,27 @@
+---
+layout: ../layouts/AboutLayout.astro
+title: "About"
+---
+
+export const yearsDeveloping =
+  new Date().getFullYear() - new Date("01/01/2018").getFullYear();
+
+## Who am I?
+
+Michael has been developing software for over {yearsDeveloping} years for companies varying in size from small teams to enterprise.
+He graduated from the Full Stack Web Developer program from [Nashville Software School](https://nashvillesoftwareschool.com) in 2017.
+Before then, he was writing code just as a hobby to support his creative habits.
+When Michael isn't in front of his computer, he can be found backpacking in the woods, dancing at music festivals, or eating at the new restaurant in town.
+He lives in Nashville with his wife and pets.
+
+<div>
+  <img
+    src="https://mclark.dev/profile.jpg"
+    class="mx-auto sm:w-1/2"
+    alt="an image of the author"
+  />
+</div>
+
+## Tech Stack
+
+This blog is built with [Astro](https://astro.build), using the [AstroPaper](https://astro.build/themes/details/astro-paper/) theme. Content is written in Markdown and [MDX](https://mdxjs.com/). Hosted on [Vercel](https://vercel.com). View the [source](https://github.com/michaelclark2/blog).
