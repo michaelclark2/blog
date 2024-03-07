@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Michael Clark",
   desc: "A full stack web developer who likes to build things and ship fast.",
   title: "Michael Makes Things",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "ogImage.jpg",
   lightAndDarkMode: true,
   postPerPage: 6,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
