@@ -8,13 +8,8 @@ import { SITE } from "./src/config";
 
 import mdx from "@astrojs/mdx";
 
-import vercelStatic from "@astrojs/vercel/static";
-
 // https://astro.build/config
 export default defineConfig({
-  // Must be 'static' or 'hybrid'
-  output: "static",
-  adapter: vercelStatic(),
   site: SITE.website,
   integrations: [
     tailwind({
