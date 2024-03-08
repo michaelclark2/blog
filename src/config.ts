@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://blog.mclark.dev",
   author: "Michael Clark",
   desc: "A full stack web developer who likes to build things and ship fast.",
-  title: "Michael Makes Things",
+  title: "Michael Clark",
   ogImage: "ogImage.jpg",
   lightAndDarkMode: true,
   postPerPage: 6,
