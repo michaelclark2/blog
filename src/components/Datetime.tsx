@@ -1,3 +1,4 @@
+"use client";
 import { LOCALE } from "@config";
 
 interface DatetimesProps {
