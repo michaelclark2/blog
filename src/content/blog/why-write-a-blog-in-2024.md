@@ -1,9 +1,9 @@
 ---
 pubDatetime: 2024-03-11T16:52:26Z
-modDatetime:
+modDatetime: 2024-03-11T16:53:25Z
 title: Why write a blog in 2024?
 featured: false
-draft: first
+draft: false
 tags:
   - full stack
   - writing
