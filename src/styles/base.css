@@ -8,11 +8,9 @@
     --color-fill: 255, 250, 255;
     --color-text-base: 30, 27, 24;
     --color-accent: 216, 49, 53;
-    --color-card: 62, 146, 204;
-    --color-card-muted: 10, 36, 99;
+    --color-card: 80, 150, 255;
+    --color-card-muted: 40, 75, 122;
     --color-border: 40, 171, 60;
-    --color-card: 2, 169, 234;
-    --color-card-muted: 2, 88, 122;
   }
   html[data-theme="dark"] {
     --color-fill: 0, 3, 0;
